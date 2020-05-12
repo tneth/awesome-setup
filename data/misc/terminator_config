@@ -1,0 +1,46 @@
+[global_config]
+  borderless = True
+  broadcast_default = off
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  extra_styling = False
+  focus = mouse
+  inactive_color_offset = 1.0
+  title_font = basis33 11
+  title_inactive_bg_color = "#86adea"
+  title_inactive_fg_color = "#c6e1c8"
+  title_receive_bg_color = "#c0bebf"
+  title_receive_fg_color = "#000000"
+  title_transmit_bg_color = "#ff00b2"
+  title_transmit_fg_color = "#c6e1c8"
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_type = transparent
+    cursor_color = "#c6e1c8"
+    font = Basis33 11
+    foreground_color = "#8bbffd"
+    icon_bell = False
+    palette = "#356377:#8bbffd:#86adea:#ad7fa8:#729fcf:#689daf:#a8549f:#86adea:#97d9ff:#aed5ff:#a4c5fd:#729fcf:#729fcf:#98cfff:#c46bc1:#f2baef"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[mcgrag]]
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = basis33 11
+    icon_bell = False
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

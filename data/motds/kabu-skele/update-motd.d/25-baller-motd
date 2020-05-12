@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#first part will create 'center info'
+#final part prints total outcome
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR
+cd ./motd_art/
+cat kabu.txt
+cat 138-shitty.txt

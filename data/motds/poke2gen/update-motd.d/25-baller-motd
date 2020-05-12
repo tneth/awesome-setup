@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#first part will create 'center info'
+#final part prints total outcome
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR
+cd ./motd_art
+cat 138-shitty.txt
+img=$(ls | shuf -n 1)
+cat $img

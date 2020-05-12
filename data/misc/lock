@@ -1,0 +1,14 @@
+#!/bin/bash
+scrot /tmp/dudw4r3z_screen_lock.png
+convert /tmp/dudw4r3z_screen_lock.png -scale 12.5% -scale 1366x768! /tmp/dudw4r3z_screen_lock.png
+if ! [ -z "$1" ]; then
+	if [ -f $1 ]; then
+		convert /tmp/dudw4r3z_screen_lock.png $1 -gravity center -composite -matte /tmp/dudw4r3z_screen_lock.png
+	fi
+else
+	if [ -f ~/.dudw4r3z/media/lock.png ]; then	
+		convert /tmp/dudw4r3z_screen_lock.png ~/.dudw4r3z/media/lock.png -gravity center -composite -matte /tmp/dudw4r3z_screen_lock.png
+	fi
+fi
+i3lock -u -i /tmp/dudw4r3z_screen_lock.png
+rm /tmp/dudw4r3z_screen_lock.png
